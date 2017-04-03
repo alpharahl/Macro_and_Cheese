@@ -1,0 +1,117 @@
+.title {
+	color: #f2d815;
+	width: 100%;
+	text-align: center;
+	font-size: 100px;
+	text-shadow:
+	-2px -2px 0 #000,
+	2px -1px 0 #000,
+	-2px 2px 0 #000,
+	2px 2px 0 #000;
+	overflow: hidden;
+	position: relative;
+}
+
+.bg {
+	background-image: url('../main_image.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover
+	background-size: cover;
+}
+
+.parallax {
+	/* The image */
+	background-image: url("../main_image.png");
+
+	height: 600px;
+
+	/* Scrolling effect" */
+	background-attachment: fixed;
+	background-position: center -50px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax-1 {
+	/* The image */
+	background-image: url("../main_image.png");
+}
+
+.parallax-2 {
+	/* The image */
+	background-image: url("../main_image.png");
+}
+
+.parallax-3 {
+	/* The image */
+	background-image: url("../main_image.png");
+}
+
+.main_buttons {
+	text-align: center;
+	overflow: hidden;
+}
+
+.circle-avatar{
+/* make it responsive */
+max-width: 100%;
+width:100%;
+height:auto;
+display:block;
+/* div height to be the same as width*/
+padding-top:100%;
+
+/* make it a circle */
+border-radius:50%;
+
+/* Centering on image`s center*/
+background-position-y: center;
+background-position-x: center;
+background-repeat: no-repeat;
+
+/* it makes the clue thing, takes smaller dimension to fill div */
+background-size: cover;
+
+/* it is optional, for making this div centered in parent*/
+margin: 0 auto;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}
+
+.plList {
+	height: 400px;
+	/*text formatting*/
+	color: white;
+	text-shadow:
+	-2px -2px 0 #000,
+	2px -1px 0 #000,
+	-2px 2px 0 #000,
+	2px 2px 0 #000;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.templars{
+	background-image: url('../templar.png');	
+}
+
+.nightblades {
+	background-image: url('../nightblade.png');
+}
+
+.sorcerers {
+	background-image: url('../sorcerer.png');
+}
+
+.dragonknights {
+	background-image: url('../dragonknight.png');
+}
+
+

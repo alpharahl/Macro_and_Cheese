@@ -1,0 +1,123 @@
+have_header: checking for unistd.h... -------------------- yes
+
+"gcc -o conftest.exe -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/i386-mingw32 -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/ruby/backward -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat conftest.c  -L. -Lc:/RailsInstaller/Ruby2.2.0/lib -L.      -lmsvcrt-ruby220  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return 0;
+8: }
+/* end */
+
+"gcc -E -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/i386-mingw32 -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/ruby/backward -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <unistd.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/select.h... -------------------- no
+
+"gcc -E -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/i386-mingw32 -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/ruby/backward -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c -o conftest.i"
+conftest.c:5:24: fatal error: sys/select.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/select.h>
+/* end */
+
+--------------------
+
+have_header: checking for poll.h... -------------------- no
+
+"gcc -E -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/i386-mingw32 -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/ruby/backward -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c -o conftest.i"
+conftest.c:5:18: fatal error: poll.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <poll.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/epoll.h... -------------------- no
+
+"gcc -E -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/i386-mingw32 -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/ruby/backward -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c -o conftest.i"
+conftest.c:5:23: fatal error: sys/epoll.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/epoll.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/event.h... -------------------- no
+
+"gcc -E -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/i386-mingw32 -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/ruby/backward -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c -o conftest.i"
+conftest.c:5:23: fatal error: sys/event.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/event.h>
+/* end */
+
+--------------------
+
+have_header: checking for port.h... -------------------- no
+
+"gcc -E -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/i386-mingw32 -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/ruby/backward -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c -o conftest.i"
+conftest.c:5:18: fatal error: port.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <port.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/resource.h... -------------------- no
+
+"gcc -E -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/i386-mingw32 -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/ruby/backward -Ic:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0 -I. -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -O3 -fno-omit-frame-pointer -fno-fast-math -g -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c -o conftest.i"
+conftest.c:5:26: fatal error: sys/resource.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/resource.h>
+/* end */
+
+--------------------
+

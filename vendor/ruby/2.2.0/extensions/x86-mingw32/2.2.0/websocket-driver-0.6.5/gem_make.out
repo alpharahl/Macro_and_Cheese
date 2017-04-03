@@ -1,0 +1,12 @@
+c:/RailsInstaller/Ruby2.2.0/bin/ruby.exe -r ./siteconf20170319-6512-2hkoq9.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+generating websocket_mask-i386-mingw32.def
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20170319-6512-as0hmc

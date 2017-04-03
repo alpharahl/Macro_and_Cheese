@@ -1,0 +1,174 @@
+c:/RailsInstaller/Ruby2.2.0/bin/ruby.exe -r ./siteconf20170319-6512-ajqsbe.rb extconf.rb
+checking for unistd.h... yes
+checking for sys/select.h... no
+checking for poll.h... no
+checking for sys/epoll.h... no
+checking for sys/event.h... no
+checking for port.h... no
+checking for sys/resource.h... no
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+generating nio4r_ext-i386-mingw32.def
+compiling bytebuffer.c
+bytebuffer.c: In function 'NIO_ByteBuffer_set_position':
+bytebuffer.c:130:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+bytebuffer.c: In function 'NIO_ByteBuffer_set_limit':
+bytebuffer.c:162:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+bytebuffer.c: In function 'NIO_ByteBuffer_fetch':
+bytebuffer.c:243:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+bytebuffer.c: In function 'NIO_ByteBuffer_put':
+bytebuffer.c:261:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+compiling monitor.c
+monitor.c: In function 'NIO_Monitor_initialize':
+monitor.c:99:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+monitor.c:99:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+monitor.c:99:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+monitor.c:99:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+compiling nio4r_ext.c
+In file included from nio4r_ext.c:7:0:
+../libev/ev.c:488:48: warning: "/*" within comment [-Wcomment]
+In file included from nio4r_ext.c:7:0:
+../libev/ev.c: In function 'ecb_binary32_to_binary16':
+../libev/ev.c:1274:13: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+In file included from ../libev/ev.c:1579:0,
+                 from nio4r_ext.c:7:
+../libev/ev_win32.c: In function 'ev_pipe':
+../libev/ev_win32.c:93:3: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+In file included from nio4r_ext.c:7:0:
+../libev/ev.c: At top level:
+../libev/ev.c:1836:31: warning: 'ev_default_loop_ptr' initialized and declared 'extern' [enabled by default]
+../libev/ev.c: In function 'array_nextsize':
+../libev/ev.c:1945:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../libev/ev.c: In function 'fd_reify':
+../libev/ev.c:2098:15: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c: In function 'evpipe_init':
+../libev/ev.c:2403:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c: In function 'evpipe_write':
+../libev/ev.c:2481:19: warning: assignment from incompatible pointer type [enabled by default]
+In file included from ../libev/ev.c:2713:0,
+                 from nio4r_ext.c:7:
+../libev/ev_select.c: In function 'select_modify':
+../libev/ev_select.c:85:5: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+In file included from nio4r_ext.c:7:0:
+../libev/ev.c: In function 'loop_init':
+../libev/ev.c:2937:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:2937:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:2937:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:2937:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:2940:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:2940:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:2940:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:2940:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:2941:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c: In function 'ev_loop_destroy':
+../libev/ev.c:2976:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c: In function 'loop_fork':
+../libev/ev.c:3079:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c: In function 'verify_watcher':
+../libev/ev.c:3123:3: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c:3126:5: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c: In function 'verify_heap':
+../libev/ev.c:3137:7: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c:3138:7: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c:3139:7: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c: In function 'array_verify':
+../libev/ev.c:3151:7: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c: In function 'ev_verify':
+../libev/ev.c:3169:5: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c:3182:15: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c:3186:11: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c:3187:11: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c: In function 'timers_reify':
+../libev/ev.c:3371:15: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c: In function 'periodics_reify':
+../libev/ev.c:3434:15: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c: In function 'ev_backend_poll':
+../libev/ev.c:3580:1: warning: no return statement in function returning non-void [-Wreturn-type]
+../libev/ev.c: In function 'ev_run':
+../libev/ev.c:3594:3: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c:3750:9: warning: passing argument 1 of 'rb_thread_call_without_gvl' from incompatible pointer type [enabled by default]
+In file included from ../libev/ev.c:42:0,
+                 from nio4r_ext.c:7:
+c:/RailsInstaller/Ruby2.2.0/include/ruby-2.2.0/ruby/thread.h:28:7: note: expected 'void * (*)(void *)' but argument is of type 'VALUE (*)(void *)'
+In file included from nio4r_ext.c:7:0:
+../libev/ev.c:3762:13: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:3762:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c: In function 'ev_io_start':
+../libev/ev.c:3937:3: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c:3938:3: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c:3947:3: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c: In function 'ev_io_stop':
+../libev/ev.c:3963:3: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c: In function 'ev_timer_start':
+../libev/ev.c:3984:3: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c: In function 'ev_timer_stop':
+../libev/ev.c:4013:5: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c: In function 'ev_periodic_start':
+../libev/ev.c:4077:7: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c: In function 'ev_periodic_stop':
+../libev/ev.c:4110:5: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c: In function 'ev_signal_start':
+../libev/ev.c:4149:3: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c:4152:3: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c: In function 'ev_stat_start':
+../libev/ev.c:4620:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4620:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4620:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4620:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4620:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4621:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c: In function 'ev_stat_stop':
+../libev/ev.c:4653:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c: In function 'ev_embed_start':
+../libev/ev.c:4856:5: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../libev/ev.c:4857:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4857:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4857:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4857:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4862:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4865:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4865:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4865:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4865:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4866:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4869:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4869:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4869:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4869:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c: In function 'ev_once':
+../libev/ev.c:5079:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:5079:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:5079:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:5079:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:5086:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:5086:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:5086:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:5086:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:5089:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c: At top level:
+../libev/ev.c:5206:27: warning: "/*" within comment [-Wcomment]
+../libev/ev.c:5207:27: warning: "/*" within comment [-Wcomment]
+In file included from nio4r_ext.c:7:0:
+../libev/ev.c:2209:1: warning: 'fd_rearm_all' defined but not used [-Wunused-function]
+../libev/ev.c: In function 'evpipe_init':
+../libev/ev.c:2434:17: warning: 'fds[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../libev/ev.c:2422:18: warning: 'fds[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+compiling selector.c
+selector.c: In function 'NIO_Selector_allocate':
+selector.c:94:5: warning: implicit declaration of function 'pipe' [-Wimplicit-function-declaration]
+selector.c:107:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+selector.c:107:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+selector.c:107:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+selector.c:107:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+selector.c:112:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+selector.c:112:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+selector.c:112:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+selector.c:112:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+linking shared-object nio4r_ext.so
+c:/railsinstaller/devkit/mingw/bin/../lib/gcc/i686-w64-mingw32/4.7.2/../../../../i686-w64-mingw32/bin/ld.exe: warning: cannot find entry symbol xport-all; defaulting to 0000000061741000
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20170319-6512-7h4l05
