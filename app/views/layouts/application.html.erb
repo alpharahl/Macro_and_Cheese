@@ -3,10 +3,18 @@
   <head>
     <title>MaC</title>
     <%= csrf_meta_tags %>
+    <%= javascript_include_tag "bootstrap.min" %>
+    <%= stylesheet_link_tag "main"%>
+    <%= stylesheet_link_tag "bootstrap.min" %>
 
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container navbar menu">
+      Macro and Cheese
+    </div>
+    <div class="container main">
+      <%= yield %>
+    </div>
   </body>
 </html>
