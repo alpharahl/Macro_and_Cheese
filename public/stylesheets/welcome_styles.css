@@ -26,8 +26,7 @@
 .parallax {
 	/* The image */
 	background-image: url("../main_image.png");
-
-	height: 600px;
+    height: 50px;
 
 	/* Scrolling effect" */
 	background-attachment: fixed;
@@ -38,7 +37,7 @@
 
 .parallax-1 {
 	/* The image */
-	background-image: url("../main_image.png");
+	background-image: url("main_image.png");
 }
 
 .parallax-2 {

@@ -8,5 +8,4 @@ class User < ApplicationRecord
     	return nil if self.main_character == nil
     	Character.find_by_id(self.main_character)
     end
-
 end

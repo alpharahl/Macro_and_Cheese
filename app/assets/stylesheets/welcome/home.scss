@@ -1,0 +1,57 @@
+.title {
+	color: #f2d815;
+	width: 100%;
+	text-align: center;
+	font-size: 100px;
+	text-shadow:
+	-2px -2px 0 #000,
+	2px -1px 0 #000,
+	-2px 2px 0 #000,
+	2px 2px 0 #000;
+	overflow: hidden;
+	position: relative;
+}
+
+.parallax {
+
+	/* Scrolling effect" */
+	background-attachment: fixed;
+	background-position: center -50px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax-1 {
+	/* The image */
+	background-image: url("../main_image.png");
+	height: calc((100vh - 100px) * .6);
+	width: 100%;
+}
+
+.parallax-2 {
+	/* The image */
+	background-image: url("../pvp.jpg");
+	width: 100%;
+	height: calc(100vh - 100px);
+}
+
+.quote-location{
+	padding-top: 15px;
+	padding-left: 15px;
+	color: #f2d815;
+	text-shadow:
+	  -1px -1px 0 #000,
+	  1px -1px 0 #000,
+	  -1px 1px 0 #000,
+	  1px 1px 0 #000;
+	font-size: 25px;
+
+}
+
+.main-content {
+	text-align: center;
+}
+
+.about-us {
+	
+}

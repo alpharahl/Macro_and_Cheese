@@ -1,0 +1,35 @@
+<%= stylesheet_link_tag "users/roster" %>
+
+<div class="container rosters-main">
+  <h1>MaC Roster</h1>
+  <table class="table table-hover">
+    <thead>
+      <th>Account Name</th>
+      <th>Main Character</th>
+      <th>Class</th>
+      <th>Build Type</th>
+      <th>Rank</th>
+    </thead>
+    <tbody class="table-body table-striped">
+      <% @users.each do |user| %>
+        <% mc = user.main_char || user.characters.first %>
+        <% if mc %>
+	      <tr>
+	        <td><%= user.name %></td>
+	        <td><%= mc.name %></td>
+	        <td><%= mc.class_type %></td>
+	        <td><%= mc.build_type %></td>
+	        <td><%= mc.rank %></td>
+	      </tr>
+	    <% else %>
+	      <tr>
+	        <td><%= user.name %></td>
+	        <% 4.times do %>
+	          <td></td>
+	        <% end %>
+	      </tr>
+	    <% end %>
+      <% end %>
+    </tbody>
+  </table>
+</div>
