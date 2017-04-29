@@ -1,0 +1,10 @@
+<h1><%= @user.name %></h1>
+<% @user.characters.each do |char| %>
+    <% if @user.main_char and @user.main_char.id == char.id %>
+      <b>
+    <% end %>
+	<p><%= char.name %></p>
+	<% if @user.main_char and @user.main_char.id == char.id %>
+	  </b>
+	<% end %>
+<% end %>
